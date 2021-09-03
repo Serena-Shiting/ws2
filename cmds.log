@@ -1,0 +1,40 @@
+    1  passwd
+    2  $ wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv
+    3  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    4  ls
+    5  ls -latr
+    6  ls -altr
+    7  find ./ -type f -name “*.txt”
+    8  ls
+    9  vi tempfile
+   10  ls
+   11  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz 
+   12  ls
+   13  wc amazon
+   14  wc amazon_reviews_us_Books_v1_02.tsv 
+   15  grep john amazon_reviews_us_Books_v1_02.tsv 
+   16  grep -i John amazon_reviews_us_Books_v1_02.tsv 
+   17  clear
+   18  grep verified amazon_reviews_us_Books_v1_02.tsv 
+   19  cut -d'   ' -f12 amazon_reviews_us_Books_v1_02.tsv
+   20  awk -F"\t" '{print $12}' amazon_reviews_us_Books_v1_02.tsv
+   21  awk -F"\t" '{print $12}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   22  ls
+   23  cut -d'   ' -f12 amazon_reviews_us_Books_v1_02.tsv
+   24  cut -d'	' -f12 amazon_reviews_us_Books_v1_02.tsv
+   25  ls
+   26  head -n 2
+   27  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+   28  ls
+   29  grep Y verified.txt 
+   30  grep Y verified.txt > unverified.txt 
+   31  ls
+   32  wc verified.txt 
+   33  grep Y verified.txt > Yverfied.txt
+   34  grep N verified.txt  > Nverfied.txt
+   35  wc Yverfied.txt 
+   36  wc Yverfied.txt > count.txt
+   37  wc Nverfied.txt >> count.txt
+   38  cat count.txt 
+   39  nano count.txt 
+   40  history > cmds.log
